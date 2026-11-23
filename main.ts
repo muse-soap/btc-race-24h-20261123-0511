@@ -22,13 +22,13 @@ const SYMBOL = 'CBBTC';
 const FAST_SPAN = 30;
 const SLOW_SPAN = 150;
 // Hysteresis band on the fast/slow ratio, in bps of the slow average.
-const ENTER_BPS = 10;
-const EXIT_BPS = -5;
+const ENTER_BPS = 8;
+const EXIT_BPS = -10;
 // Share of equity a buy spends (the rest stays as a cash buffer).
 const BUY_SHARE_BPS = 9500;
 // Stops, in bps below a reference close.
-const TRAIL_BPS = 220; // below the highest close since the fill
-const HARD_BPS = 350; // below the position's average cost
+const TRAIL_BPS = 260; // below the highest close since the fill
+const HARD_BPS = 400; // below the position's average cost
 // Slippage cap sent with every order, in bps past the deciding close.
 const SLIP_BPS = 250;
 
